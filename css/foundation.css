@@ -2248,6 +2248,10 @@ meta.foundation-mq-topbar {
 
 /* Panels */
 .panel {
+
+  width: 215px;
+  height: 300px;
+
   border-style: solid;
   border-width: 1px;
   border-color: #d8d8d8;
@@ -6113,9 +6117,9 @@ th.hide-for-touch {
 }
 
 h2 {
-  position  : absolute;
+  /* position  : absolute;
   top   : 200px;
-  left    : 100;
+  left    : 100; */
   width   : 100%;
 }
 
@@ -6134,7 +6138,7 @@ h2 span.spacer {
 
 .block2 { 
     position:   relative;
-    background: #fc0; 
+    /*background: #fc0;*/ 
     float:      left; 
     top:        -45px;     
     z-index:    0;
