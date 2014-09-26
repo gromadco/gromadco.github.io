@@ -4,6 +4,51 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GROMAD.CO | Welcome</title>
+
+    <style>
+
+      a.rollover1 {
+      background: url(photo/1.jpg); 
+      display: block; 
+      width: 215px; 
+      height: 215px; 
+      }
+      a.rollover1:hover {
+      background: url(photo/1_.jpg);
+      }
+
+      a.rollover2 {
+      background: url(photo/2.jpg); 
+      display: block; 
+      width: 215px; 
+      height: 215px; 
+      }
+      a.rollover2:hover {
+      background: url(photo/2_.jpg); 
+      }
+
+      a.rollover3 {
+      background: url(photo/3.jpg); 
+      display: block; 
+      width: 215px; 
+      height: 215px; 
+      }
+      a.rollover3:hover {
+      background: url(photo/3_.jpg); 
+      }
+
+      a.rollover4 {
+      background: url(photo/4.jpg); 
+      display: block; 
+      width: 215px; 
+      height: 215px; 
+      }
+      a.rollover4:hover {
+      background: url(photo/4_.jpg); 
+      }
+
+    </style>
+
     <link rel="stylesheet" href="css/foundation.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
@@ -26,11 +71,12 @@
         </ul>
         
         <section class="top-bar-section">
-          <ul class="left">
+          <ul class="right">
             <li><a href="#">goals</a></li>
-            <li><a href="#">people</a></li>
-            <li><a href="#">projects</a></li>
+            <li><a href="#people">people</a></li>
+            <li><a href="#projects">projects</a></li>
             <li><a href="#">join</a></li>
+            <li><a href="others.html">others</a><li>
           </ul>
         </section> 
 
@@ -45,17 +91,7 @@
 
         <div class="hide-for-small">
           <div class="block2">
-            <img src="http://placekitten.com/1000/500"/ align="top">    
-            
-            <!-- <h2>
-              <span>TEXT about GROMAD.CO
-                    <span class="spacer"></span>
-                    <br />
-                    <span class="spacer"></span>
-                    Attract new interns
-              </span>
-            </h2> --> 
-
+            <img src="http://placekitten.com/1000/500"/ align="top">             
           </div>
         </div>
 
@@ -76,35 +112,31 @@
 
   <div class="row">
     <div class="large-12 columns">
+      <p id="people">
       <center><h6>PEOPLE</h6></center> 
+      </p>
     </div>
   </div><br>
 
  
   <div class="row">
-    <div class="large-12 columns">
-      
+    <div class="large-12 columns">      
  
         <div class="large-3 small-6 columns">
-          <img src="photo/1.jpg"/>
-          <!-- <h6 class="panel">text attract new interns</h6> -->
+          <p><a href="#" class="rollover1"> </a></p>
         </div>
  
         <div class="large-3 small-6 columns">
-          <img src="photo/2.jpg"/>
-          <!-- <h6 class="panel">text future work</h6> -->
+          <p><a href="#" class="rollover2"> </a></p>         
+        </div>  
+ 
+        <div class="large-3 small-6 columns">
+          <p><a href="#" class="rollover3"> </a></p>
         </div>
  
         <div class="large-3 small-6 columns">
-          <img src="photo/3.jpg"/>
-          <!-- <h6 class="panel">text recomendation people</h6> -->
+          <p><a href="#" class="rollover4"> </a></p>         
         </div>
- 
-        <div class="large-3 small-6 columns">
-          <img src="photo/4.jpg"/>
-          <!-- <h6 class="panel">text recomendation company</h6> -->
-        </div>
-
         
     </div>
   </div><br>
@@ -115,23 +147,19 @@
 
       
         <div class="large-3 small-6 columns">
-          <img src="photo/5.jpg"/>
-          <!-- <h6 class="panel">text attract new interns</h6> -->
+          <img src="photo/no-avatar.jpg"/>          
         </div>
  
         <div class="large-3 small-6 columns">
-          <img src="http://placekitten.com/300/300"/>
-          <!-- <h6 class="panel">text future work</h6> -->
+          <img src="photo/no-avatar.jpg"/>          
         </div>
  
         <div class="large-3 small-6 columns">
-          <img src="http://placekitten.com/300/300"/>
-          <!-- <h6 class="panel">text recomendation people</h6> -->
+          <img src="photo/no-avatar.jpg"/>          
         </div>
  
         <div class="large-3 small-6 columns">
-          <img src="http://placekitten.com/300/300"/>
-          <!-- <h6 class="panel">text recomendation company</h6> -->
+          <img src="photo/no-avatar.jpg"/>          
         </div>
 
         
@@ -140,7 +168,9 @@
 
   <div class="row">
     <div class="large-12 columns">
+      <p id="projects">
       <center><h6>PROJECTS</h6></center> 
+      </p>
     </div>
   </div><br>
 
@@ -202,8 +232,8 @@
         <div class="large-6 columns">
           <ul class="inline-list right">
             <li><a href="#">goals</a></li>
-            <li><a href="#">people</a></li>
-            <li><a href="#">projects</a></li>
+            <li><a href="#people">people</a></li>
+            <li><a href="#projects">projects</a></li>
             <li><a href="#">join</a></li>
           </ul>
         </div>

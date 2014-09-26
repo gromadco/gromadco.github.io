@@ -1277,7 +1277,7 @@ meta.foundation-mq-topbar {
   .top-bar ul {
     margin-bottom: 0;
     list-style: none; 
-    
+        
   }
   .top-bar .row {
     max-width: none;  
@@ -1389,6 +1389,7 @@ meta.foundation-mq-topbar {
   position: relative; 
   width: auto; 
   transition: left 300ms ease-out;   
+  background-color: blue;
 }
   .top-bar-section ul {
     padding: 0;
@@ -1397,7 +1398,7 @@ meta.foundation-mq-topbar {
     display: block;
     font-size: 16px;
     margin: 0;  
-
+    
   }
   .top-bar-section .divider,
   .top-bar-section [role="separator"] {
@@ -1408,7 +1409,7 @@ meta.foundation-mq-topbar {
   }
   .top-bar-section ul li {
     background: #333333; 
-    
+    background-color: blue;    
   }
     .top-bar-section ul li > a {
 
@@ -2255,9 +2256,12 @@ meta.foundation-mq-topbar {
   border-style: solid;
   border-width: 1px;
   border-color: #d8d8d8;
-  margin-bottom: 1.25rem;
-  padding: 1.25rem;
-  background: #f2f2f2; 
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #f2f2f2;   
+  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+
 }
   .panel > :first-child {
     margin-top: 0; }
@@ -6143,3 +6147,4 @@ h2 span.spacer {
     top:        -45px;     
     z-index:    0;
    }
+
