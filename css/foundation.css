@@ -6121,9 +6121,6 @@ th.hide-for-touch {
 }
 
 h2 {
-  /* position  : absolute;
-  top   : 200px;
-  left    : 100; */
   width   : 100%;
 }
 
@@ -6131,7 +6128,7 @@ h2 span {
   color     : white;
   font      : bold 24px/45px Helvetica, Sans-Serif;
   letter-spacing    : -1px;
-  background    : rgb(0, 0, 0); /* на случай, если следующая строка не сработает */
+  background    : rgb(0, 0, 0); /* the case if the next line does not work */
   background    : rgba(0, 0, 0, 0.7);
   padding     : 10px;
 }
@@ -6142,7 +6139,6 @@ h2 span.spacer {
 
 .block2 { 
     position:   relative;
-    /*background: #fc0;*/ 
     float:      left; 
     top:        -45px;     
     z-index:    0;
@@ -6150,11 +6146,109 @@ h2 span.spacer {
 
 .container{
   width:215px;
-  height:215px; /* высота видимой части (одной картинки) */
+  height:215px; /* height of the visible part (one picture) */
   display:block; 
-  overflow:hidden; /* чтобы нижнюю картинку не было видно */
+  overflow:hidden; /* to the bottom image was not visible */
 }
 
 .container:hover img{
   margin-top:-215px;
+}
+
+/* Form a layer of background shading */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    cursor: default;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 1;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+/* Pozitsionirum media elements within the window */
+.is-image {
+  width: 100%;
+  display: inline-block;
+  height: auto;
+  margin: auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+embed, iframe {
+  width: 100%;
+  min-width: 320px;
+  max-width: 600px;
+ 
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+/* We form and position the popup */
+.popup { 
+    min-width: 320px;
+    max-width: 600px;
+    width: 600px;
+    margin: auto;
+    background-color: #fff;
+    border: 3px solid #fff;
+    display: block;
+    left: 0; right: 0;
+    opacity: 0;
+    padding: 15px;
+    position: fixed;
+    font-size: 14px;
+    top: 0;
+    visibility: hidden;
+    z-index: 10;
+
+    -webkit-transition: opacity .5s, top .5s;
+    -moz-transition: opacity .5s, top .5s;
+    -ms-transition: opacity .5s, top .5s;
+    -o-transition: opacity .5s, top .5s;
+    transition: opacity .5s, top .5s;
+}
+/* Set the position of the window appears */ 
+.overlay:target+.popup {
+    top: 10%;
+    opacity: 1;
+    visibility: visible;
+}
+/* We make and pozitsoniruem close button */
+.close {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #ccc;
+    height: 28px;
+    line-height: 24px;
+    position: absolute;
+    right: 0px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;padding: 0;
+    top: 0px;
+    width: 48px;    
+}
+.close:before {
+    color: rgba(255, 255, 255, 0.9);
+    content: "close";
+    font-size: 14px;
+    /*text-shadow: 0 -5px rgba(0, 0, 0, 0.9);*/
+}
+.close:hover {
+    background-color: rgba(64, 128, 128, 0.8);
+}
+.popup p, .popup div {
+    margin-bottom: 10px;
 }
