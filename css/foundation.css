@@ -6148,3 +6148,13 @@ h2 span.spacer {
     z-index:    0;
    }
 
+.container{
+  width:215px;
+  height:215px; /* высота видимой части (одной картинки) */
+  display:block; 
+  overflow:hidden; /* чтобы нижнюю картинку не было видно */
+}
+
+.container:hover img{
+  margin-top:-215px;
+}
