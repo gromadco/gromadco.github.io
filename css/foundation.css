@@ -102,6 +102,7 @@ select {
 }
 
 .row {
+  min-width: 450px; /* The minimum width of the container */
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -871,7 +872,7 @@ select {
   .large-2 {
     width: 16.66667%; }
 
-  .large-3 {
+  .large-3 {    
     width: 25%; }
 
   .large-4 {
@@ -1248,7 +1249,7 @@ meta.foundation-mq-topbar {
   position: fixed;
   top: 0;
   z-index: 99; 
-  
+
 }
   .fixed.expanded:not(.top-bar) {
     overflow-y: auto;
@@ -1261,7 +1262,7 @@ meta.foundation-mq-topbar {
       z-index: 99; }
     .fixed.expanded:not(.top-bar) .top-bar-section {
       z-index: 98;
-      margin-top: 45px; }
+      margin-top: 45px;}
 
 
 .top-bar {
@@ -1301,6 +1302,7 @@ meta.foundation-mq-topbar {
     padding-bottom: .35rem;
     margin-bottom: 0;
     font-size: 0.75rem;  
+    opacity: 0.1;
 
   }
   .top-bar .title-area {
@@ -2260,7 +2262,7 @@ meta.foundation-mq-topbar {
   padding: 1rem;
   background: #f2f2f2;   
   
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, .2);
 
 }
   .panel > :first-child {
@@ -3008,9 +3010,14 @@ p {
     line-height: 1.35;
     font-style: italic; }
 
+@font-face {
+    font-family: Pompadur; /* Гарнитура шрифта */
+    src: url(fonts/TenorSans-Regular.ttf); /* Путь к файлу со шрифтом */
+   }    
+
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: Pompadur, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #222222;
@@ -6144,7 +6151,7 @@ h2 span.spacer {
     z-index:    0;
    }
 
-.container{
+.container{  
   width:215px;
   height:215px; /* height of the visible part (one picture) */
   display:block; 
