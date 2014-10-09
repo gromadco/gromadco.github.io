@@ -102,7 +102,7 @@ select {
 }
 
 .row {
-  min-width: 450px; /* The minimum width of the container */
+  /*min-width: 450px; The minimum width of the container */
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -3009,11 +3009,6 @@ p {
     font-size: 0.875rem;
     line-height: 1.35;
     font-style: italic; }
-
-@font-face {
-    font-family: Pompadur; /* Гарнитура шрифта */
-    src: url(fonts/TenorSans-Regular.ttf); /* Путь к файлу со шрифтом */
-   }    
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
