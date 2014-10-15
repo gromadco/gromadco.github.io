@@ -2252,8 +2252,8 @@ meta.foundation-mq-topbar {
 /* Panels */
 .panel {
 
-  width: 215px;
-  height: 300px;
+  /*width: 215px;*/
+  height: 250px;
 
   border-style: solid;
   border-width: 1px;
