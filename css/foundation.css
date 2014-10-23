@@ -1272,8 +1272,7 @@ meta.foundation-mq-topbar {
   position: relative;
   background: #333333;  
   margin-bottom: 0;
-  z-index: 2;     /* порядок над картинкой */
-  /*opacity: 0.1;  /* полупрозрачность */
+  z-index: 2;     
 }
   .top-bar ul {
     margin-bottom: 0;
@@ -1331,9 +1330,7 @@ meta.foundation-mq-topbar {
   .top-bar .toggle-topbar {
     position: absolute;
     right: 0;
-    top: 0; 
-
-  }
+    top: 0; }
     .top-bar .toggle-topbar a {
       color: white;
       text-transform: uppercase;
@@ -1343,20 +1340,16 @@ meta.foundation-mq-topbar {
       display: block;
       padding: 0 15px;
       height: 45px;
-      line-height: 45px; 
-
-    }
+      line-height: 45px; }
     .top-bar .toggle-topbar.menu-icon {
       top: 50%;
-      margin-top: -16px; 
-    }
+      margin-top: -16px; }
       .top-bar .toggle-topbar.menu-icon a {
         height: 34px;
         line-height: 33px;
         padding: 0 40px 0 15px;
         color: white;
-        position: relative; 
-      }
+        position: relative; }
         .top-bar .toggle-topbar.menu-icon a span::after {
           content: "";
           position: absolute;
@@ -1366,11 +1359,9 @@ meta.foundation-mq-topbar {
           margin-top: -8px;
           right: 15px;
           box-shadow: 0 0px 0 1px white, 0 7px 0 1px white, 0 14px 0 1px white;
-          width: 16px; 
-        }
+          width: 16px; }
         .top-bar .toggle-topbar.menu-icon a span:hover:after {
-          box-shadow: 0 0px 0 1px white, 0 7px 0 1px white, 0 14px 0 1px white; 
-        }
+          box-shadow: 0 0px 0 1px white, 0 7px 0 1px white, 0 14px 0 1px white; }
   .top-bar.expanded {
     height: auto;
     background: transparent;  
@@ -1410,8 +1401,7 @@ meta.foundation-mq-topbar {
     width: 100%; 
   }
   .top-bar-section ul li {
-    background: #333333; 
-    background-color: blue;    
+    background: #333333;     
   }
     .top-bar-section ul li > a {
 
