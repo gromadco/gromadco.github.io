@@ -5,20 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GROMAD.CO | Welcome</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation/foundation.js"></script>
     <script src="js/foundation/foundation.topbar.js"></script>
-    <script src="/js/foundation.min.js"></script>
+    <script src="js/foundation.min.js"></script>
     <!-- Other JS plugins can be included here -->
-
     <script>
       $(document).foundation();
     </script>
-    
   </head>
   <body>
 
-        
   <nav class="top-bar" data-topbar>  
     <ul class="title-area">           
       <li class="name">
@@ -40,58 +38,7 @@
     </section> 
   </nav>  
 
-
-<!--
-<nav class="top-bar" data-topbar>
-  <ul class="title-area">
-    <li class="name">
-      <h1>
-        <a href="#">My Site</a>
-      </h1>
-    </li>
-    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
-</ul>
-<section class="top-bar-section"> 
-  <ul class="right">
-    <li><a href="#">Nav Button</a></li>
-    <li><a href="#">Nav Button</a></li>
-    <li><a href="#">Nav Button</a></li>
-    <li><a href="#">Nav Button</a></li>
-    <li><a href="#">Nav Button</a></li>
-    <li><a href="#">Nav Button</a></li>
-  </ul>
-</section>
-</nav>
--->
-
-  <!-- big photo -->
-  <div class="row">
-    <div class="large-12 columns">
-        <div class="hide-for-small">
-          <div class="block2">
-            <img src="img/main.jpg"/ align="top">             
-          </div>
-        </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="large-12 columns">
-      <center><h2>Create code. The problem is solved. Get experience</h2></center> 
-    </div>
-  </div><br>
-  <div class="row">
-    <div class="large-12 columns">
-      <center><h6>No unattainable goals, there is a high rate of laziness, <p>lack of ingenuity and a stock of excuses!</h6></center> 
-    </div>
-  </div><br>
-  <div class="row">
-    <div class="large-12 columns">
-      <p id="people">
-      <center><h6>PEOPLE</h6></center> 
-      </p>
-    </div>
-  </div><br>
-  <div class="row">
+  <div class="row first-row" id="people">
     <div class="large-12 columns">
     <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
         <li>        
@@ -136,7 +83,19 @@
         </li>       
     </ul>
     </div>
-  </div><br>  
+  </div>
+
+  <div id="about">
+    <div class="row">
+      <div class="large-12 columns">
+        <center>
+          <p><strong>Gromad.co</strong> is a group of developers and designers aspiring to make information useful.</p>
+          <p>Feel free to <a href="#join">join</a> us and work on any open source <a href="#projects">project</a>.</p>
+          <p>Get experience. Have something to show. Get paid for the internship.</p>
+        </center>
+      </div>
+    </div>
+  </div>
 
   <a href="#x" class="overlay" id="win1"></a>
   <div class="popup">
@@ -147,7 +106,7 @@
     <center><a href="https://github.com/serejahh">
       <img src="img/github.jpg" width="67px" height="67px" alt=""/>
     </a></center>    
-    <a class="close" title="Закрыть" href="#close"></a>
+    <a class="close" title="Close" href="#close"></a>
   </div>
 
   <a href="#x" class="overlay" id="win2"></a>
@@ -159,7 +118,7 @@
     <center><a href="https://github.com/dudarev">
       <img src="img/github.jpg" width="67px" height="67px" alt=""/>
     </a></center>    
-    <a class="close" title="Закрыть" href="#close"></a>
+    <a class="close" title="Close" href="#close"></a>
   </div>
 
   <a href="#x" class="overlay" id="win3"></a>
@@ -171,7 +130,7 @@
     <center><a href="https://github.com/mityaz">
       <img src="img/github.jpg" width="67px" height="67px" alt=""/>
     </a><center>    
-    <a class="close" title="Закрыть" href="#close"></a>
+    <a class="close" title="Close" href="#close"></a>
   </div> 
 
   <a href="#x" class="overlay" id="win4"></a>
@@ -191,7 +150,7 @@
         <img src="img/twitter-icon.jpg" width="67px" height="67px" alt=""/>
       </a>
     </center>    
-    <a class="close" title="Закрыть" href="#close"></a>
+    <a class="close" title="Close" href="#close"></a>
   </div>  
 
   <a href="#x" class="overlay" id="win5"></a>
@@ -203,67 +162,57 @@
     <center><a href="#">
       <img src="img/github.jpg" width="67px" height="67px" alt=""/>
     </a></center>    
-    <a class="close" title="Закрыть" href="#close"></a>
+    <a class="close" title="Close" href="#close"></a>
   </div>  
-  
-  <div class="row">
-    <div class="large-12 columns">
-      <p id="projects">
-      <center><h6>PROJECTS</h6></center> 
-      </p>
-    </div>
-  </div><br>
 
-  <div class="row">
+  <div class="row" id="projects">
     <div class="large-12 columns">
     <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
         <li>              
-          <h6 class="panel">
-            Talking Companion: mobile app that announces places nearby</p>
+          <div class="panel">
+            <strong>Talking Companion</strong>: mobile app that announces places nearby</p>
             <a href="https://github.com/gromadco/Talking-Companion-iOS/">more on GitHub</a>
-          </h6>                     
+          </div>                     
         </li>
         <li>              
-          <h6 class="panel">
-            Locograph: open local search engine</p>
+          <div class="panel">
+            <strong>Locograph</strong>: open local search engine
             <a href="https://github.com/dudarev/locograph/">more on GitHub</a>
-          </h6>                     
+          </div>                     
         </li>
         <li>             
-          <h6 class="panel">
-            Photoplanet: feed of best photos for hashtags or location</p>
+          <div class="panel">
+            <strong>Photoplanet</strong>: feed of best photos for hashtags or location
             <a href="https://github.com/dudarev/photoplanet/">more on GitHub</a>
-          </h6>                    
+          </div>                    
         </li>
         <li>           
-          <h6 class="panel">
-            Gromad.co: Website</p>
+          <div class="panel">
+            <strong>Gromad.co website</strong>
             <a href="https://github.com/gromadco/gromadco.github.io/">more on GitHub</a>
-          </h6>                        
+          </div>                        
         </li>             
+        <li>             
+          <div class="panel">
+            <strong>Mapjumper</strong>: a Chrome extension to easily jump from one online map provider to another</p>
+            <a href="https://github.com/dudarev/mapjumper/">more on GitHub</a>
+          </div>                    
+        </li>
     </ul>
    </div> 
-  </div><br>
-  <div class="row">
-    <div class="large-12 columns">
-      <p id="join">
-      <center><h6>JOIN</h6></center> 
-      </p>
-    </div>
   </div>
-  <center><a href="https://github.com/Gromadco/">Gromadco on GitHub</a></center>
-  <center>In order to join you need to make a pool rekvest repository project team site where you want to add yourself as a candidate</center>    
+  <div class="row">
+      <center>
+        <h2 id="join">How to join</h2>
+        <p>First, join our <a href="http://go.kato.im/pJblTUPQ">public chat</a>. We'll take it from there.</p>
+      </center> 
+  </div>
  <!-- end -->
   <footer class="row">
     <div class="large-12 columns">
       <hr>
       <div class="row">
-        <div class="large-6 columns">
-          <ul class="inline-list left">
-            <li><a href="https://dudarev.com">© dudarev.com</a><li>
-          </ul>
-        </div>
-        <div class="large-6 columns">
+        <div class="large-12 columns">
           <ul class="inline-list right">            
             <li><a href="#people">people</a></li>
             <li><a href="#projects">projects</a></li>
